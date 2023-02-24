@@ -9,12 +9,11 @@
 .App{
     width: 100%;
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: 80px 1fr 1fr;
+    display: flex;
     align-items: center;
     justify-content: center;
-    // flex-wrap: wrap;
-    // flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 @import 'Components/Header/Header';
 @import 'Components/Footer/Footer';

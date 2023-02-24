@@ -17,19 +17,25 @@ function Main(){
         imgRef.current.src = IMAGE[carousel]
     }
     return(
-        <div className="main">            
-            <div className='main_textSide'>
-                <h3 style={{fontSize:"50px"}}>The new phones are here take a took</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, et omnis! Voluptates, magni rem! Corporis tempore aut debitis nulla dolore voluptas aliquid quas minima magni.</p>
-                <button>Explore</button>
-            </div>
-                <p style={{fontSize:"30px", position:"relative"}}><SlArrowLeft onClick={prev} className="arrow"/></p>
+        < >       
+            <div className="main">            
+                <div className='main_textSide'>
+                    <h3 style={{fontSize:"50px"}}>The new phones are here take a took</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, et omnis! Voluptates, magni rem! Corporis tempore aut debitis nulla dolore voluptas aliquid quas minima magni.</p>
+                    <button>Explore</button>
+                </div>                
                 <div className='main_imgSide'>
-                    <img ref={imgRef} src={IMAGE[carousel]} alt="iphoneImg" width={"650px"} height="550px"/>
-                </div>
-                <p style={{fontSize:"30px", position:"relative"}}><SlArrowRight onClick={next} className="arrow" /></p>
-                        
-        </div>
+                    <p style={{fontSize:"30px", position:"relative"}}><SlArrowLeft onClick={prev} className="arrow"/></p>
+                        <img ref={imgRef} src={IMAGE[carousel]} alt="iphoneImg" width={"650px"} height="550px"/>
+                    <p style={{fontSize:"30px", position:"relative"}}><SlArrowRight onClick={next} className="arrow" /></p>
+                </div>             
+            </div>
+            <div className='shopText'>
+                <p className='Title'>Shop our latest offers and categorioes</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque vel alias aspernatur quibusdam laboriosam omnis, totam sint nihil sit, nemo cupiditate rerum. Corrupti, alias?</p>
+            </div>
+            
+        </>
     );
 }
 export default Main

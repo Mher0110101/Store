@@ -8,10 +8,18 @@
 
 header{
     padding: 10px;
-    width: 100%;
+    width: 98%;
     max-width: 1440;
-    height: 80px;
-    @include Flex_between();
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px gray;
+    display: grid;
+    position: fixed;
+    top: 3px;
+    z-index: 310;
+    background-color: rgb(253, 253, 253);
+    opacity: 2;
+    grid-template-columns: 1fr 3fr 1fr;
     h1{
         font-family: "Audiowide",sans-serif ;
     }
@@ -20,9 +28,13 @@ header{
        display: flex;
        font-size: 14px;
        line-height: 16.8px;
+       justify-content: center;
     }
     & .item{
         margin: 10px;
+        background: linear-gradient(#07837b, #3a0d50);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     & .icon{
         font-size: 20px;
