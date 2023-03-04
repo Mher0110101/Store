@@ -2,9 +2,11 @@ import {CiSearch} from 'react-icons/ci'
 import {SlBasket} from 'react-icons/sl'
 import {IoIosArrowDown} from 'react-icons/io'
 import {AiOutlineUser} from 'react-icons/ai'
+import { useState } from 'react'
 
 
 function Header(){
+    
     return(
             
             <header>   

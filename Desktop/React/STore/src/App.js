@@ -1,4 +1,5 @@
 import './App.scss'
+import './mobileLayout.scss'
 import Categories from './Components/Categories/Categories';
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
